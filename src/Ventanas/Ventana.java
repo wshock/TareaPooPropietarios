@@ -9,8 +9,4 @@ public class Ventana extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
     }
-
-
-
-
 }
