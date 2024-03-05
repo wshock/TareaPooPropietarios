@@ -32,7 +32,7 @@ public class VentanaPrincipal extends Ventana {
         }
 
         if (e.getSource().equals(btnBuscar)){
-            ventanaRegistro.setVisible(true);
+            ventanaBusqueda.setVisible(true);
             this.setVisible(false);
         }
     }
