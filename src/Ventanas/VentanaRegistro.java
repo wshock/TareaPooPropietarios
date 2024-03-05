@@ -24,12 +24,13 @@ public class VentanaRegistro extends Ventana{
         if (e.getSource().equals(btnRealizarRegistro)){
             Propietario currentRegister = new Propietario(tfNombres.getText(),tfApellidos.getText(),tfDocumento.getText(),Integer.parseInt(tfEdad.getText()),tfIdPropietario.getText());
             VentanaPrincipal.listaPropietarios.add(currentRegister);
+            VentanaListado.actualizarTabla();
 
-            tfNombres.setText(" ");
-            tfDocumento.setText(" ");
-            tfApellidos.setText(" ");
-            tfEdad.setText(" ");
-            tfIdPropietario.setText(" ");
+            tfNombres.setText("");
+            tfDocumento.setText("");
+            tfApellidos.setText("");
+            tfEdad.setText("");
+            tfIdPropietario.setText("");
 
 
             VentanaPrincipal.ventanaPrincipal.setVisible(true);
