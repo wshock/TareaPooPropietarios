@@ -12,4 +12,10 @@ public class Propietario extends Persona {
     public String getId_Propietario() {
         return id_Propietario;
     }
+
+    public Object[] getInformacionPropietario(){
+        Object[] info = {this.getNombres(),
+                this.getApellidos(), this.getEdad(), this.getDocumento(), this.getId_Propietario()};
+        return info;
+    }
 }
